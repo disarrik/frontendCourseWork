@@ -14,10 +14,12 @@
 <body>
     <header>
         <div class="up-bar">
-            <h5 class="adress">Москва, ул. Орджоникидзе, 10,  м. Ленинский проспект</h5>
+            <h5 class="adress">Москва, ул. Орджоникидзе, 10</h5>
             <a href="tel:+79636245510"><h3 class="phone">+7 (963) 624-55-10</h3></a>
         </div>
+
         <div class="container">
+
             <a href="" id="#logo"><img src="res/logo.png" alt="" class="logo"></a>
             <input type="checkbox" name="" id="burger-check">
             <label for="burger-check" class="burger">
@@ -26,6 +28,7 @@
                 <span class="burger-span" id="third"></span>
                 <span class="burger-span" id="fourth"></span>
             </label>
+
             <nav class="top-menu">
                 <ul class="top-menu-list">
                     <li class="top-menu-list-item"><a href="">Главная</a></li>
@@ -80,11 +83,52 @@
                     <li class="top-menu-list-item"><a href="">Контакты</a></li>
                 </ul>
             </nav>
+
             <form action="" class="search" method="get">
                 <input id="search-field" placeholder="Поиск" type="text" name="criteria">
                 <input id="search-submit" value="&#128269" type="submit">
             </form>
+
         </div>
     </header>
+
+    <main>
+        <div class="container">
+            <section class="promo">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <input type="radio" name="slider" id="switch5">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="res/1.jpg"></article>
+                                <article><img src="res/2.jpg"></article>
+                                <article><img src="res/3.jpg"></article>
+                                <article><img src="res/4.jpg"></article>
+                                <article><img src="res/5.jpg"></article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
