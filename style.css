@@ -31,6 +31,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: rgb(245, 245, 245);
+    font-size: 1.2em;
 }
 
 header .up-bar .adress {
@@ -61,7 +62,7 @@ header .container {
     margin: 0;
     width: 80%;
     text-transform: uppercase;
-    font-size:medium;
+    font-size: 1.3em;
     height: 70px;
 }
 
@@ -139,6 +140,7 @@ header .container {
     height:fit-content;
     line-height: 20px;
     padding: 10px 5px 5px 10px;
+    margin-bottom: 10px;
 }
 
 .sub-menu-item-category a{
@@ -313,11 +315,15 @@ header .container {
 /* ----------------- */
 
 main {
-    min-height: 1200px;
+    min-height: 1000px;
 }
 
 main h1 {
-    font-size: 21px;
+    font-size: xx-large;
+}
+
+main p {
+    font-size: x-large;
 }
 
 main .container{
@@ -332,6 +338,12 @@ main .path {
 
 main .path a {
     text-decoration: none;
+}
+
+#old-logo {
+    width: 300px;
+    float: right;
+    margin: 5px;
 }
 
 .promo {
@@ -485,7 +497,13 @@ main .container input{ /*скрывает стандартные инпуты (�
 
 /* phone */
 @media (max-width: 800px){
+    #slider {
+        width: 100%;
+    }
 
+    .slider-description {
+        display: none;
+    }
 }
 
 /* ----------------- */
@@ -497,11 +515,17 @@ main .container input{ /*скрывает стандартные инпуты (�
 
 .carousel h1 {
     width: 100%;
+    font-size: 21px;
     text-align: center;
 }
 
 .slider__wrapper {
     overflow: hidden;
+}
+
+#prev,
+#next {
+    z-index: 9;
 }
 
 .slider__item {
@@ -522,10 +546,13 @@ main .container input{ /*скрывает стандартные инпуты (�
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 15px;
 }
 
 .card h4 {
-    font-size: 12px;
+    font-size: 17px;
+    max-width: 200px;
+    word-wrap:break-word;
     color: black;
     text-align: center;
 }
@@ -550,6 +577,30 @@ main .container input{ /*скрывает стандартные инпуты (�
     z-index: 2;
 }
 
+/* phone */
+@media (max-width: 800px){
+    .slider__item {
+        max-width: 100%;
+        width: fit-content;
+        margin: 5px 0;
+    }
+
+    #next,
+    #prev {
+        display: none;
+    }
+
+    .slider__wrapper {
+        height: fit-content;
+    }
+
+    .slider__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
 
 /* ----------------- */
 
@@ -566,6 +617,15 @@ footer .container {
     display: block;
     padding-left: 7%;
     list-style: none;
+}
+
+.footer-menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
 }
 
 .footer-menu-item {
