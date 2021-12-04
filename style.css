@@ -632,7 +632,28 @@ iframe {
 .highlight {
     text-decoration: underline;
     text-decoration-color: rgb(235,91,36);
-  }
+}
+
+.table {
+    margin: 0, auto;
+    width: 100%;
+}
+
+.table tr td{
+    padding: 10px;
+}
+
+.list li {
+    font-size: large;
+}
+
+.images {
+    text-align: center;
+}
+
+.images img {
+    margin: 5px;
+}
 
 /* phone */
 @media (max-width: 800px){

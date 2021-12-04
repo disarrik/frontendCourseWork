@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $("#term").keypress(function () {
       var term = "";
