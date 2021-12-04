@@ -452,38 +452,41 @@ main .container input[type="radio"]{ /*скрывает стандартные �
 
 
 .slider-description {
+    overflow: hidden;
     width: 15%;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .slider-description h2{
     position: relative;
     height: 10px;
     margin: 0;
-    z-index: -1;
-    opacity: 0.1;
+    z-index: 5;
+    opacity: 0.2;
 }
 
 .slider-description div{
+    margin: 10px 0;
     position: relative;
     height: 100%;
 }
 
 .slider-description-title {
-    top: 0;
-    left: 0;
     position: absolute;
     opacity: 0;
     transition: 0.6s all;
-    font-size: 30px;
 }
 
 .slide-description-body {
+    top: 40px;
     padding: 10px;
     position: absolute;
     opacity: 0;
     transition: 0.3s all;
     font-size: 18px;
+    z-index: 4;
 }
 
 #switch1:checked ~ .slider-description .slider-description-title:nth-child(1),
@@ -655,6 +658,11 @@ iframe {
     margin: 5px;
 }
 
+.map {
+    display: flex;
+    justify-content: center;
+}
+
 /* phone */
 @media (max-width: 800px){
     .slider__item {
@@ -681,6 +689,10 @@ iframe {
 
 
 /* ----------------- */
+
+footer {
+    font-size: x-large;
+}
 
 footer .container {
     background-color: rgb(245, 245, 245);
