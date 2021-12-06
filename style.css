@@ -170,6 +170,7 @@ header .container {
 
 .search-field {
     display: inline-block;
+    font-size: x-large;
     width: 100%;
     border-width: 0px;
     border-bottom: 1px solid rgb(235,91,36);
@@ -558,6 +559,20 @@ iframe {
     font-size: 7rem;
 }
 
+@media (min-width: 1700px) {
+    .slider__item {
+        flex: 0 0 16.666%;
+        max-width: 16.666%;
+    }
+}
+
+@media (max-width: 1700px) and (min-width: 1300px){
+    .slider__item {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
 .card {
     min-width: 200px;
     height: 300px;
@@ -633,8 +648,7 @@ iframe {
 }
 
 .highlight {
-    text-decoration: underline;
-    text-decoration-color: rgb(235,91,36);
+    background-color: rgb(235,91,36);
 }
 
 .table {
