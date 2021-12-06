@@ -174,7 +174,7 @@ header .container {
     font-size: x-large;
     width: 100%;
     border-width: 0px;
-    border-bottom: 1px solid rgb(235,91,36);
+    border-bottom: 1px solid rgb(235,91,36) !important;
     margin: 4px;
 }
 
@@ -221,11 +221,18 @@ header .container {
     top: 28px;
 }
 
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
 /*tablet */
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .container {
       width: 100%;
   }  
+  .top-menu {
+      font-size: medium;
+  }
 }
 
 /*phone */
@@ -773,6 +780,12 @@ footer .container {
 .socials .social-container img {
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 800px){
+    footer {
+        font-size: medium;
+    }
 }
 
 /* ----------------- */

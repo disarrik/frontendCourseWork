@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#term").keyup (function () {
+    $("#term").keyup (function (e) {
       var term = "";
       term = $('#term').val();
       $('#content').unhighlight();
@@ -20,7 +20,10 @@ $(document).ready(function () {
           elem.children[i].style.display = "block";
         }
       }
-      return true;
+      if (e.keyCode!=13) {
+        return true;
+      }
+      return false;
     });
   });
 
