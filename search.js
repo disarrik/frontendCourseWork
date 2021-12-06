@@ -5,7 +5,7 @@ $(document).ready(function () {
       $('#content').unhighlight();
       console.log(term);
       if ($('#term').val() == "") {
-        $('#content').highlight();
+        $('#content').addClass("highlight")
       } else {
         $('#content').highlight(term);
         return true;
