@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  if (window.screen.width) {
+  if (window.screen.width > 800) {
       const slider = new ChiefSlider('.slider', {
           loop: false
         });
